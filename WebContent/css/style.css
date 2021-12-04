@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.login-block a:hover {
+    color: #62ab00;
+}
+
+a.font-weight-bold.green-hover:hover {
+    color: #62ab00;
+}
+
+/* JS validation messages */
+label.error {
+	color: red;
+	font-style: italic;
+	margin: 1px;
+}
+
+.review-wrapper .rating-row .loggedCustemerName {
+	text-align: right;
+}
+
+.site-wrapper .inner-page-sec-padding-bottom .shop-toolbar .sorting-selection {
+	text-align: right;
+}
