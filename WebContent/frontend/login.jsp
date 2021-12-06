@@ -65,6 +65,7 @@
                                         <button type="submit" class="btn btn-outlined">Login</button>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										<a>Don't have an account?&nbsp;<a href="register" class="font-weight-bold green-hover">Register</a></a>
+										<a href="${pageContext.request.contextPath}/reset_password">I forgot my password</a>
                                     </div>
                                 </div>
                             </div>
