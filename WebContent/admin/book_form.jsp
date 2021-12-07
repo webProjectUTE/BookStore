@@ -156,7 +156,7 @@
                                     <td class="text-right td-label"><label
                                         for="customer-name" class= "">Book Image:</label></td>
                                     <td><input type="text" class="input-focus usid"
-                                        name="bookImage" id="bookImage">
+                                        name="bookImage" id="bookImage" value='${book.image}'>
                                         <img id = "thumbnail" alt="Image Preview" style="width:20%; margin-top:10px"
                                         src="${book.image}"
                                       /></td>
