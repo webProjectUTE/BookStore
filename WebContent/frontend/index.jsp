@@ -81,7 +81,7 @@
                                 <div class="product-card card-style-list">
                                     <div class="card-image">
                                     <a href="view_book?id=${book.bookId}">
-						               <img src="data:image/jpg;base64, ${book.base64Image}"  alt=""/>
+						               <img src="${book.image}"  alt=""/>
 						              </a>
                                     </div>
                                     <div class="product-card--body">
@@ -2175,7 +2175,7 @@
 							         <div class="book">
 							            <div>
 							             <a href="view_book?id=${book.bookId}">
-							               <img class="book-small" src="data:image/jpg;base64, ${book.base64Image}" />
+							               <img class="book-small" src="${book.image}" />
 							              </a>
 							            </div>
 							            <div>
@@ -2196,7 +2196,7 @@
                                         <div class="product-card card-style-list">
                                             <div class="card-image">
                                             <a href="view_book?id=${book.bookId}">
-							               <img src="data:image/jpg;base64, ${book.base64Image}" alt=""/>
+							               <img src="${book.image}" alt=""/>
 							              </a>
                                             </div>
                                             <div class="product-card--body">
