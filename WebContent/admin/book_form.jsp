@@ -221,7 +221,6 @@
                 category: "required",
                 title: "required",
                 author: "required",
-                isbn:"required",
                 publishDate: "required",
                 
                 <c:if test="${book == null}">
@@ -238,7 +237,6 @@
                 category:"Please select a category for the book",
                 title: "Please enter title of the book",
                 author:"Please enter author of the bool",
-                isbn:"Please enter ISBN of the book",
                 publishDate:"Please enter publish date of the bool",
                 bookImage:"Please choose an image of the book",
                 price:"Please enter price of the book",
