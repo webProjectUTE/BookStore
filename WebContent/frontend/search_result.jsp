@@ -90,28 +90,19 @@
 		                                    <div class="card-image">
 		                                        <img src="${book.image}" alt="">
 		                                        <div class="hover-contents">
-		                                            <a href="product-details.html" class="hover-image">
-														<img src="image/products/product-1.jpg" alt="">
+		                                            <a href="view_book?id=${book.bookId}" class="hover-image">
+														<img src="${book.image}" alt="">
 													</a>
 		                                            <div class="hover-btns">
 		                                                <a href="add_to_cart?book_id=${book.bookId}" class="single-btn">
 															<i class="fas fa-shopping-basket"></i>
 														</a>
-		                                                <a href="wishlist.html" class="single-btn">
-															<i class="fas fa-heart"></i>
-														</a>
-		                                                <a href="compare.html" class="single-btn">
-															<i class="fas fa-random"></i>
-														</a>
-		                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal" class="single-btn">
-															<i class="fas fa-eye"></i>
-														</a>
 		                                            </div>
 		                                        </div>
 		                                    </div>
 		                                    <div class="price-block">
-		                                        <span class="price"><fmt:formatNumber value="${book.price}" type="currency" /></span>
-		                                        <del class="price-old">£51.20</del>
+		                                        <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
+		                                        <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
 		                                        <span class="price-discount">20%</span>
 		                                    </div>
 		                                </div>
@@ -119,16 +110,16 @@
 		                        
 		                            <div class="product-list-content">
 		                                <div class="card-image">
-		                                    <img src="${book.image}">
+		                                    <a href="view_book?id=${book.bookId}"><img src="${book.image}"></a>
 		                                </div>
 		                                <div class="product-card--body">
 		                                    <div class="product-header">
-		                                        <a href="" class="author">${book.author}</a>
+		                                        <a class="author">${book.author}</a>
 		                                        <h3><a href="view_book?id=${book.bookId}" tabindex="0">${book.title}</a></h3>
 		                                    </div>
 		                                    <div class="price-block">
 		                                        <span class="price"><fmt:formatNumber value="${book.price}" type="currency" /></span>
-		                                        <del class="price-old">£51.20</del>
+		                                        <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
 		                                        <span class="price-discount">20%</span>
 		                                    </div>
 		                                    <div class="rating-block">
@@ -143,280 +134,6 @@
 		                    </div>
 	                    </c:forEach>
                     </c:if>
-                    
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-6.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											fpple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-7.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											Apple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-8.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											Apple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-9.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											Apple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-10.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											Apple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-11.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											Apple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-card card-style-list">
-                            <div class="product-list-content">
-                                <div class="card-image">
-                                    <img src="image/products/product-2.jpg" alt="">
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="product-header">
-                                        <a href="" class="author">
-											Apple
-										</a>
-                                        <h3><a href="product-details.html" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-                                    </div>
-                                    <article>
-                                        <h2 class="sr-only">Card List Article</h2>
-                                        <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>
-                                    </article>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                    <div class="rating-block">
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star star_on"></span>
-                                        <span class="fas fa-star "></span>
-                                    </div>
-                                    <div class="btn-block">
-                                        <a href="" class="btn btn-outlined">Add To Cart</a>
-                                        <a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-                                        <a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- Pagination Block -->
                 <div class="row pt--30">
