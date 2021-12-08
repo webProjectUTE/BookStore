@@ -67,7 +67,7 @@ public class CustomerServices {
 		String email = request.getParameter("email");
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
-		String password = getMd5(request.getParameter("password"));
+		String password = request.getParameter("password");
 		String phone = request.getParameter("phone");
 		String addressLine1 = request.getParameter("address1");
 		String addressLine2 = request.getParameter("address2");
@@ -84,7 +84,7 @@ public class CustomerServices {
 		customer.setLastname(lastName);
 		
 		if (password != null && !password.equals("")) {
-			customer.setPassword(password);
+			customer.setPassword(getMd5(password));
 		}
 		
 		customer.setPhone(phone);
