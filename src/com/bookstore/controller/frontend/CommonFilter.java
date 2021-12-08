@@ -34,7 +34,6 @@ public class CommonFilter implements Filter {
 		String path = httpServletRequest.getRequestURI().substring(httpServletRequest.getContextPath().length());
 		
 		if (!path.startsWith("/admin/")) {
-			
 	        List<Category> listCategory = categoryDAO.listAll();
 			request.setAttribute("listCategory", listCategory);
 			
