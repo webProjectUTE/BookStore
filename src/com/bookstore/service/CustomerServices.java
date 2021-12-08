@@ -262,7 +262,7 @@ public class CustomerServices {
 	     
 	    String randomPassword = RandomStringUtils.randomAlphanumeric(10);
 	     
-	    customer.setPassword(randomPassword);
+	    customer.setPassword(getMd5(randomPassword));
 	    customerDAO.update(customer);
 	     
 	    return randomPassword;
