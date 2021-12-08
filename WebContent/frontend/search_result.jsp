@@ -103,7 +103,7 @@
 		                                    <div class="price-block">
 		                                        <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
 		                                        <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
-		                                        <span class="price-discount">20%</span>
+		                                        <span class="price-discount">-20%</span>
 		                                    </div>
 		                                </div>
 		                            </div>
@@ -120,7 +120,7 @@
 		                                    <div class="price-block">
 		                                        <span class="price"><fmt:formatNumber value="${book.price}" type="currency" /></span>
 		                                        <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
-		                                        <span class="price-discount">20%</span>
+		                                        <span class="price-discount">-20%</span>
 		                                    </div>
 		                                    <div class="rating-block">
 		                                        <jsp:directive.include file="book_rating.jsp" />

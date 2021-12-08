@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="product-header">
-                                            <a href="" class="author">
+                                            <a class="author">
                                                 ${book.author}
                                             </a>
                                             <h3><a href="product-details.html">${book.title}</a></h3>
