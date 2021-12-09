@@ -86,12 +86,12 @@
 		                                    </div>
 		                                    <div class="product-card--body">
 		                                        <div class="product-header">
-		                                            <a href="" class="author">${book.author}</a>
+		                                            <a class="author">${book.author}</a>
 		                                            <h3><a href="view_book?id=${book.bookId}">${book.title}</a></h3>
 		                                        </div>
 		                                        <div class="price-block">
 		                                            <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
-		                                            <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
+		                                            <del class="price-old">$<fmt:formatNumber value="${book.price * 1.25}" maxFractionDigits="2"/></del>
 		                                            <span class="price-discount">-20%</span>
 		                                        </div>
 		                                    </div>
@@ -289,7 +289,7 @@
 		                                            </div>
 		                                            <div class="price-block">
 		                                                <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
-		                                                <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
+		                                                <del class="price-old">$<fmt:formatNumber value="${book.price * 1.25}" maxFractionDigits="2"/></del>
 		                                                <span class="price-discount">-20%</span>
 		                                            </div>
 		                                        </div>
@@ -336,7 +336,7 @@
 		                                            </div>
 		                                            <div class="price-block">
 		                                                <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
-		                                                <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
+		                                                <del class="price-old">$<fmt:formatNumber value="${book.price * 1.25}" maxFractionDigits="2"/></del>
 		                                                <span class="price-discount">-20%</span>
 		                                            </div>
 		                                        </div>
@@ -716,7 +716,7 @@
 		                                                </div>
 		                                                <div class="price-block">
 		                                                    <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
-		                                                    <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
+		                                                    <del class="price-old">$<fmt:formatNumber value="${book.price * 1.25}" maxFractionDigits="2"/></del>
 		                                                    <span class="price-discount">-20%</span>
 		                                                </div>
 		                                            </div>
@@ -767,7 +767,7 @@
 		                                                </div>
 		                                                <div class="price-block">
 		                                                    <span class="price"><fmt:formatNumber value="${book.price}" type="currency"/></span>
-		                                                    <del class="price-old">$<fmt:formatNumber value="${book.price * 1.2}" maxFractionDigits="2"/></del>
+		                                                    <del class="price-old">$<fmt:formatNumber value="${book.price * 1.25}" maxFractionDigits="2"/></del>
 		                                                    <span class="price-discount">-20%</span>
 		                                                </div>
 		                                            </div>
