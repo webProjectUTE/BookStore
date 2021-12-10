@@ -25,7 +25,7 @@ import org.hibernate.annotations.NamedQuery;
 
 
 @Entity
-@Table(name = "book", catalog = "bookstoredb", uniqueConstraints = @UniqueConstraint(columnNames = "title"))
+@Table(name = "book", catalog = "qhextuyq_bookstoredb", uniqueConstraints = @UniqueConstraint(columnNames = "title"))
 @NamedQueries({
 	@NamedQuery(name = "Book.findAll", query = "SELECT b FROM Book b"),
 	@NamedQuery(name = "Book.findAll_Pagination", query = "SELECT b FROM Book b ORDER BY b.bookId"),

@@ -20,7 +20,7 @@ import javax.persistence.UniqueConstraint;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
 @Entity
-@Table(name = "customer", catalog = "bookstoredb", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name = "customer", catalog = "qhextuyq_bookstoredb", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 @NamedQueries({
 	@NamedQuery(name="Customer.findAll", query="SELECT c FROM Customer c ORDER BY c.registerDate DESC"),
 	@NamedQuery(name="Customer.countAll", query="SELECT COUNT(c.email) FROM Customer c"),

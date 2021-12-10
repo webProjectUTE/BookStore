@@ -17,7 +17,7 @@ import javax.persistence.NamedQuery;
 
 
 @Entity
-@Table(name = "category", catalog = "bookstoredb")
+@Table(name = "category", catalog = "qhextuyq_bookstoredb")
 @NamedQueries({
 	@NamedQuery(name = "Category.findAll", query = "SELECT c FROM Category c ORDER BY c.name"),
 	@NamedQuery(name = "Category.countAll", query = "SELECT COUNT(*) FROM Category"),

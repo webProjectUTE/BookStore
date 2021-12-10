@@ -31,7 +31,7 @@ import org.hibernate.annotations.NamedQuery;
 	           + "GROUP BY r.book.bookId HAVING AVG(r.rating) >= 4.0 "
 	           + "ORDER BY ReviewCount DESC, AvgRating DESC")
 })
-@Table(name = "review", catalog = "bookstoredb")
+@Table(name = "review", catalog = "qhextuyq_bookstoredb")
 public class Review implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;

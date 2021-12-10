@@ -8,9 +8,9 @@
 	<persistence-unit name="BookStoreWebsite">
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://bookstoredb.cwrcmksfx05l.ap-southeast-1.rds.amazonaws.com:3306/bookstoredb?autoReconnect=true" />
-			<property name="javax.persistence.jdbc.user" value="admin" />
-			<property name="javax.persistence.jdbc.password" value="nhatsang" />
+				value="jdbc:mysql://103.97.125.253:3306/qhextuyq_bookstoredb?autoReconnect=true" />
+			<property name="javax.persistence.jdbc.user" value="qhextuyq_sang" />
+			<property name="javax.persistence.jdbc.password" value="sangphan123456" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
@@ -20,6 +20,7 @@
 			<property name="hibernate.c3p0.timeout" value="120"/>
 			<property name="hibernate.c3p0.max_statements" value="50"/>
 			<property name="hibernate.c3p0.idle_test_period" value="3000"/>
+			<property name="connection.pool_size" value="100"/>
 		</properties>
 	</persistence-unit>
 

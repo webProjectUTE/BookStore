@@ -17,7 +17,7 @@ import javax.persistence.Table;
 	@NamedQuery(name = "Users.checkLogin", query = "SELECT u FROM Users u  WHERE u.email = :email AND password = :password")
 	
 })
-@Table(name = "users", catalog = "bookstoredb")
+@Table(name = "users", catalog = "qhextuyq_bookstoredb")
 public class Users implements java.io.Serializable {
 
 	/**
