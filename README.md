@@ -4,7 +4,8 @@
 - Sinh viên:
   - Nguyễn Hoàng Nhật. MSSV: 19110031. 
   - Phan Thanh Sang. MSSV: 19110276.
-  
+- Báo cáo: 
+  - [File pdf](./Report_03_ITPROJ.pdf) 
 Truy cập tại: https://metabookshop.herokuapp.com/
 Kết quả đạt được:
 
